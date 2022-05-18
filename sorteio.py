@@ -15,7 +15,7 @@ class Instagram_bot:
 
     def login(self):
         driver = self.driver
-        driver.get("https://www.instagram.com/?hl=pt-br")
+        driver.get("https://www.instagram.com")
         time.sleep(3)
         loginButton = driver.find_element_by_xpath("//input[@name='username']")
         loginButton.click()
@@ -42,15 +42,6 @@ class Instagram_bot:
             time.sleep(5)
             campo_comentario.send_keys(Keys.ENTER)
             time.sleep(30)
-
-'''
-USUARIOS 
-@brunofigfre @eliseunetoo
-@lucaszeviani @raphaelcogo
-@thiagotissei @eduardolachimia
-@henriqueletrari @nobile.caio
-@_tavinpaviani @jgvmartini
-'''
 
 list_user = ["@albuquerquethiago @vitorlucenaaa", "@thiagotissei @lucaszeviani", "@raphaelcogo @brunofigfre"]
 username = inpt.input_username()
