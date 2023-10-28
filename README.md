@@ -12,3 +12,4 @@ Run this command on your terminal
 ```
 python3 sorteio.py
 ```
+*If all the libraries are in the environment 
